@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  int x = 5;
+  int y = 10;
+  int sum = x + y;
+  
+  printf("The sum of %d and %d is %d", x, y sum); // error 1: missing comma
+  
+  int product = x * y;
+  printf("The product of %d and %d is %d\n", x, y, product); // error 2: missing newline
+  
+  float average = (x + y) / 2; // error 3: integer division instead of float division
+  printf("The average of %d and %d is %.2f\n", x, y, average); // error 4: wrong format specifier
+  
+  int quotient = y / x; // error 5: incorrect variable assignment
+  printf("The quotient of %d and %d is %d\n", y, x, quotient);
+  
+  return 0;
+}
